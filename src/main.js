@@ -6,8 +6,8 @@ import router from './router/router'
 import 'jquery'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap'
+import '../theme/index.css'
 import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
 import 'font-awesome/css/font-awesome.css'
 
 Vue.use(ElementUI)

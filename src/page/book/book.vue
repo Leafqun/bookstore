@@ -75,7 +75,7 @@
                 });
             },
             handleClick(tab, event) {
-                if(this.activeName == second){
+                if(this.activeName == 'second'){
                     this.$router.push({name: 'chapters'});
                 }
             },
@@ -120,7 +120,7 @@
     }
     .bookname{
         font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
-        font-size: 30px;
+        font-size: 35px;
     }
     .author{
         margin-left: 20px;
@@ -137,5 +137,8 @@
     }
     .bbb{
         width:100%;
+    }
+    .label_name{
+        font-size: 35px;
     }
 </style>

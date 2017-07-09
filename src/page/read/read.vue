@@ -47,15 +47,15 @@
         </div>
         <div class="container all">
             <div class="container-fluid">
-                <div class="panel panel-success" v-if="chapter">
+                <div class="panel panel-success alltext" v-if="chapter">
                     <h2>第{{chapter.chapterIndex}}章 {{chapter.chapterName}}</h2>
                     <div class="text" v-html="chapter.content">
                     </div>
                 </div>
                 <div class=" menu">
-                    <button class="btn btn-default inf " @click="goLast">上一章</button>
-                    <button class="btn btn-default inf " @click="goBook">目录</button>
-                    <button class="btn btn-default inf" @click="goNext">下一章</button>
+                    <el-button type="primary" class="inf" @click="goLast">上一章</el-button>
+                    <el-button type="primary" class="inf" @click="goBook">目录</el-button>
+                    <el-button type="primary" class="inf" @click="goNext">下一章</el-button>
                 </div>
             </div>
         </div>
@@ -133,8 +133,11 @@
         width: 1000px;
         margin-bottom: 100px;
         float: left;
-    }
 
+    }
+    .alltext{
+
+    }
     .text {
         font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
         line-height: 40px;
@@ -153,11 +156,12 @@
     .inf {
         float: left;
         text-align: center;
-        width: 312.5px;
+        width: 300px;
     }
 
     .total {
         overflow: hidden;
+        margin-top:-10px;
     }
 
     .side {
